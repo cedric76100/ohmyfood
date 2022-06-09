@@ -1,0 +1,175 @@
+:root {
+    --primary: #9356DC;
+    --second: #FF79DA;
+    --tertiaire: #99E2D0;
+}
+
+header {
+    background-color: blueviolet;
+    display: flex;
+}
+
+.back {
+    width: 8%;
+    text-align: right;
+    padding-top: 40px;
+}
+
+#logo {
+    background-color: aqua;
+    text-align: center;
+    width: 100%;
+}
+
+#logo img {
+    max-width: 100%;
+    height: 50%;
+    padding-top: 20px;
+}
+
+main {
+    background-color: yellow;
+}
+
+.illustration {
+    background-color: brown;
+}
+
+.illustration img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.menu {
+    background-color: whitesmoke;
+}
+
+.titre-restaurant {
+    display: flex;
+    background-color: chartreuse;
+    justify-content: space-between;
+}
+
+.restaurant {
+    background-color: blue;
+    width: 50%;
+}
+
+.coeur {
+    background-color: crimson;
+}
+
+@keyframes slideToLeft {
+    0% {
+        right: -60px
+    }
+
+    100% {
+        right: 0px
+    }
+}
+
+@keyframes slideToRight {
+    0% {
+        right: 0px
+    }
+
+    100% {
+        right: -60px
+    }
+}
+
+.capsule {
+    position: relative;
+    overflow: hidden;
+    cursor: grab;
+}
+
+.check {
+    width: 60px;
+    height: 15px;
+    background-color: deeppink;
+    text-align: center;
+    overflow: hidden;
+    padding: 20px 0px 20px 0px;
+    position: absolute;
+    right: -60px;
+    top: -10px;
+    animation-name: slideToRight;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    transition: all 2s ease-in-out;
+}
+
+
+.capsule:hover .check {
+    animation-name: slideToLeft;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    transform: rotate(-360deg);
+    transform-origin: center;
+
+}
+
+.prix {
+    padding-top: 15px;
+}
+
+.info-capsule {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    background-color: rgb(234, 174, 24);
+}
+
+.plat {
+    flex: 1;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.prix {
+    background-color: darkcyan;
+    white-space: nowrap;
+    margin-right: 60px;
+}
+
+.entrees {
+    background-color: rgb(24, 99, 131);
+}
+
+.plats {
+    background-color: darksalmon;
+}
+
+.desserts {
+    background-color: forestgreen;
+}
+
+footer {
+    background-color: rgb(59, 59, 59);
+    padding: 20px;
+}
+
+.mentions a {
+    display: flex;
+    padding-top: 10px;
+    text-decoration: none;
+    color: white;
+}
+
+.commander {
+    text-align: center;
+}
+
+footer img {
+    max-width: 20%;
+    height: 20%;
+    filter: brightness(20)
+}
+
+footer i {
+    padding-right: 5px;
+}
