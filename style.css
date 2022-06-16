@@ -4,19 +4,27 @@
     --tertiaire: #99E2D0;
 }
 
+body {
+    margin: 0px;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    font-family: 'Shrikhand'
+}
+
 header {
-    background-color: blueviolet;
     display: flex;
+    height: 60px;
 }
 
 .back {
     width: 8%;
     text-align: right;
-    padding-top: 40px;
+    padding-top: 20px;
 }
 
 #logo {
-    background-color: aqua;
     text-align: center;
     width: 100%;
 }
@@ -28,12 +36,27 @@ header {
 }
 
 main {
-    background-color: yellow;
+    background-color: whitesmoke;
 }
 
-.illustration {
-    background-color: brown;
+.coeur {
+    padding-top: 25px;
+    border: none;
+    color: white;
+    background-color: whitesmoke;
+    padding: 10px 14px;
+    font-size: 16px;
+    cursor: pointer;
 }
+
+.coeur:hover {
+    animation-name: like;
+    animation-duration: 1s;
+    animation-delay: 0.5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+}
+
 
 .illustration img {
     width: 100%;
@@ -43,21 +66,19 @@ main {
 
 .menu {
     background-color: whitesmoke;
+    border-radius: 20px;
+    position: relative;
+    top: -20px;
+    padding: 10px;
 }
 
 .titre-restaurant {
     display: flex;
-    background-color: chartreuse;
     justify-content: space-between;
 }
 
 .restaurant {
-    background-color: blue;
     width: 50%;
-}
-
-.coeur {
-    background-color: crimson;
 }
 
 
@@ -100,6 +121,18 @@ main {
     }
 }
 
+@keyframes like {
+    0% {
+        opacity: 0;
+        color: white;
+    }
+
+    100% {
+        opacity: 1;
+        color: red;
+    }
+}
+
 a {
     display: block;
     cursor: pointer;
@@ -111,17 +144,28 @@ a {
     gap: 10px;
 }
 
+.service h5 {
+    text-decoration: underline 3px var(--tertiaire);
+}
+
 .capsule {
     position: relative;
     overflow: hidden;
+    border-radius: 10px;
+    gap: 10px;
+}
+
+.nom {
+    font-weight: bold;
+    font-size: large;
 }
 
 .check {
     width: 60px;
     overflow: hidden;
-    background-color: deeppink;
+    background-color: var(--tertiaire);
     text-align: center;
-    padding: 20px 0;
+    padding: 33px 0;
     position: absolute;
     right: -60px;
     top: -10px;
@@ -133,7 +177,9 @@ a {
     animation: slideToLeft 0.5s ease 0s 1 normal forwards;
 }
 
-
+.checkicon {
+    color: white;
+}
 
 .one {
     animation-name: slidetobottom;
@@ -168,6 +214,8 @@ a {
     position: absolute;
     right: 0px;
     margin-right: 80px;
+    font-weight: bold;
+    padding-top: 20px;
 }
 
 .capsule:hover .prix {
@@ -178,8 +226,9 @@ a {
     display: flex;
     align-items: center;
     margin: 0;
-    background-color: rgb(234, 174, 24);
+    background-color: white;
     position: relative;
+    padding: 10px;
 }
 
 .plat {
@@ -215,6 +264,19 @@ footer {
 
 .commander {
     text-align: center;
+    padding: 40px 0px 100px 0px;
+}
+
+.commander input {
+    border: 1px var(--primary);
+    border-radius: 30px;
+    background: linear-gradient(#FF79DA, #9356DC);
+    height: 45px;
+    width: 150px;
+    box-shadow: 2px 2px 10px grey;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
 }
 
 footer img {
