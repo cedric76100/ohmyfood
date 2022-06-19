@@ -42,21 +42,37 @@ main {
 .coeur {
     padding-top: 25px;
     border: none;
-    color: white;
     background-color: whitesmoke;
     padding: 10px 14px;
-    font-size: 16px;
+    font-size: 25px;
     cursor: pointer;
+    position: relative;
 }
 
-.coeur:hover {
-    animation-name: like;
-    animation-duration: 1s;
-    animation-delay: 0.5s;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: 1;
+.coeur>i {
+    position: absolute;
+    right: 6px;
+    top: 20px;
 }
 
+
+.coeurvide {
+    z-index: 2;
+    background-color: whitesmoke;
+    opacity: 1;
+    transition: opacity 250ms
+}
+
+.coeurplein {
+    display: inline-block;
+    background: linear-gradient(350deg, #99E2D0 0%, #9356DC 0%, #FF79DA 100%);
+    color: transparent;
+    -webkit-background-clip: text
+}
+
+.coeur>i:hover {
+    opacity: 0
+}
 
 .illustration img {
     width: 100%;
@@ -80,7 +96,6 @@ main {
 .restaurant {
     width: 50%;
 }
-
 
 @keyframes slideToLeft {
     0% {
@@ -129,7 +144,8 @@ main {
 
     100% {
         opacity: 1;
-        color: red;
+        color: var(--primary);
+        background-color: var(--primary);
     }
 }
 
@@ -171,7 +187,6 @@ a {
     top: -10px;
     animation: slideToRight 0.5s ease 0s 1 normal forwards;
 }
-
 
 .capsule:hover .check {
     animation: slideToLeft 0.5s ease 0s 1 normal forwards;
