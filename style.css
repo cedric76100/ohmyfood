@@ -73,11 +73,135 @@ main {
     cursor: pointer;
 }
 
+.fonctionnement {
+    background-color: white;
+    padding: 20px;
+}
+
+
+.liste {
+    margin: 0;
+    padding: 0;
+}
+
+.choix {
+    padding: 25px;
+    margin: 15px 10px 15px 10px;
+    box-shadow: 5px 5px 10px lightgrey;
+    border-radius: 15px;
+    background-color: #f6f6f6;
+
+}
+
+ol {
+    list-style: none;
+    counter-reset: li
+}
+
+li::marker {
+    counter-increment: compteListe 1;
+    content: counter(compteListe) " ";
+    background: #9356dc;
+    height: 1.5rem;
+    width: 1.5rem;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    position: absolute;
+    left: -0.75rem;
+}
+
+.pastillerestaurant {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.pastilles {
+    margin: 20px;
+}
+
+.pastilles a {
+    text-decoration: none;
+    color: black;
+}
+
+.pastille {
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 3px 3px 6px lightgrey;
+    background-color: white;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.pastille img {
+    height: 100px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.pastilletexte {
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+}
+
+.texte {
+    padding: 5px 5px;
+    line-height: 23px;
+}
+
+.like {
+    display: flex;
+    background-color: white;
+}
+
+.coeura {
+    padding-top: 25px;
+    border: none;
+    background-color: white;
+    padding: 10px 14px;
+    font-size: 20px;
+    cursor: pointer;
+    position: relative;
+}
+
+.coeura>i {
+    position: absolute;
+    right: 6px;
+    top: 20px;
+    background-color: white;
+}
+
+
+.coeurvide {
+    z-index: 2;
+    background-color: whitesmoke;
+    opacity: 1;
+    transition: opacity 250ms
+}
+
+.coeurplein {
+    display: inline-block;
+    background: linear-gradient(350deg, #99E2D0 0%, #9356DC 0%, #FF79DA 100%);
+    color: transparent;
+    -webkit-background-clip: text
+}
+
+.coeura>i:hover {
+    opacity: 0
+}
+
 /* restaurant*/
 .back {
     width: 8%;
     text-align: right;
     padding-top: 20px;
+    color: black;
 }
 
 .coeur {
@@ -85,7 +209,7 @@ main {
     border: none;
     background-color: whitesmoke;
     padding: 10px 14px;
-    font-size: 25px;
+    font-size: 20px;
     cursor: pointer;
     position: relative;
 }
@@ -293,20 +417,6 @@ a {
     overflow: hidden;
     text-overflow: ellipsis;
 }
-
-.entrees {
-    background-color: rgb(24, 99, 131);
-}
-
-.plats {
-    background-color: darksalmon;
-}
-
-.desserts {
-    background-color: forestgreen;
-}
-
-
 
 .mentions a {
     display: flex;
