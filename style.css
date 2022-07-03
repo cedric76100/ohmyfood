@@ -36,7 +36,7 @@ main {
 /* acceuil*/
 .localisation {
     text-align: center;
-    background-color: rgb(208 205 205);
+    background-color: #e4e4e4;
     font-weight: bold;
     height: 40px;
     padding-top: 20px;
@@ -58,7 +58,7 @@ main {
 
 .explorer {
     text-align: center;
-    padding: 40px 0px 100px 0px;
+    padding: 40px 0px 40px 0px;
 }
 
 .explorer input {
@@ -88,29 +88,40 @@ main {
     padding: 25px;
     margin: 15px 10px 15px 10px;
     box-shadow: 5px 5px 10px lightgrey;
-    border-radius: 15px;
+    border-radius: 25px;
     background-color: #f6f6f6;
 
 }
 
 ol {
-    list-style: none;
-    counter-reset: li
+    counter-reset: choix;
 }
 
-li::marker {
-    counter-increment: compteListe 1;
-    content: counter(compteListe) " ";
-    background: #9356dc;
-    height: 1.5rem;
-    width: 1.5rem;
+li {
+    list-style-type: none;
+    counter-increment: choix;
+}
+
+li:before {
+    content: counter(choix);
     border-radius: 100px;
+    background-color: var(--primary);
+    color: white;
+    position: absolute;
+    left: 20px;
+    width: 25px;
+    height: 25px;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #fff;
-    position: absolute;
-    left: -0.75rem;
+}
+
+.choix:hover {
+    background-color: #efe5fc;
+}
+
+.choix i:hover {
+    color: var(--primary);
 }
 
 .pastillerestaurant {
@@ -119,7 +130,7 @@ li::marker {
     gap: 20px;
 }
 
-.pastilles {
+.resto {
     margin: 20px;
 }
 
@@ -463,6 +474,31 @@ footer i {
 
 /*desktop*/
 @media screen and (min-width : 1224px) {
+
+    /*acceuil*/
+
+    ol {
+        display: flex;
+    }
+
+    li {
+        width: 33%;
+    }
+
+    .pastilles {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .ligne1 {
+        width: 40%;
+    }
+
+    .ligne2 {
+        width: 40%;
+    }
+
+    /*restaurant*/
     h5 {
         font-size: larger;
         padding-left: 10px;
@@ -501,6 +537,10 @@ footer i {
         gap: 10px;
         background-color: white;
         margin: 10px;
+    }
+
+    footer {
+        padding-bottom: 40px;
     }
 
     footer img {
