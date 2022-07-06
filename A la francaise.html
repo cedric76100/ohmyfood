@@ -2,7 +2,7 @@
 <html lang="fr">
 
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css" />
@@ -15,7 +15,7 @@
     <title>A la française</title>
 </head>
 
-<body>
+<body-1>
     <header>
         <a class="back" href="Acceuil.html">
             <i class="fas fa-arrow-left"></i>
@@ -27,185 +27,155 @@
     <main>
         <div class="illustration">
             <img src="image/a la française.jpg" alt="française">
-            <section class="menu">
-                <div class="titre-restaurant">
-                    <div class="restaurant">
-                        <h1>A la française</h1>
+        </div>
+        <section class="menu">
+            <div class="titre-restaurant">
+                <div class="restaurant">
+                    <h1>A la française</h1>
+                </div>
+                <button class="coeur">
+                    <i class="fas fa-heart coeurplein"></i>
+                    <i class="far fa-heart coeurvide"></i>
+                </button>
+            </div>
+            <section class="service" id="entrées">
+                <header class="service_header">
+                    <h3>ENTREES</h3>
+                </header>
+
+                <div class="service_carte delai1">
+                    <div class="service_carte_texte">
+                        <span class="service_carte_texte2">Tartare de poulpe acidulé</span>
+                        <span class="service_carte_texte3">Aux zests d'orange</span>
                     </div>
-                    <button class="coeur">
-                        <i class="fas fa-heart coeurplein"></i>
-                        <i class="far fa-heart coeurvide"></i>
-                    </button>
+                    <div class="service_carte_prix">
+                        <strong>25€</strong>
+                    </div>
+                    <div class="service_carte_check">
+                        <i class="check_icone fas fa-check-circle"></i>
+                    </div>
                 </div>
-                <div class="service">
-                    <h5> ENTREES </h5>
 
-                    <a class="capsule one">
-                        <div class="info-capsule">
-                            <div class="plat">
-                                <div class="nom">Tarte de poulpe acidulé</div>
-                                <div> Aux zests d'orange </div>
-                            </div>
-
-                            <div class="prix">
-                                25 <i class="fas fa-euro-sign"></i>
-                            </div>
-                        </div>
-                        <div class="check">
-                            <div class="checkicon">
-                                <i class="fas fa-check-circle fa-lg"></i>
-                            </div>
-                        </div>
-                    </a>
-                    <a class="capsule two">
-                        <div class="info-capsule">
-                            <div class="plat">
-                                <div class="nom"> Velouté de légumes d'antan </div>
-                                <div> Carotte, panais, topinambour </div>
-                            </div>
-
-                            <div class="prix">
-                                35 <i class="fas fa-euro-sign"></i>
-                            </div>
-                        </div>
-                        <div class="check">
-                            <div class="checkicon">
-                                <i class="fas fa-check-circle fa-lg"></i>
-                            </div>
-                        </div>
-                    </a>
-                    <a class="capsule three">
-                        <div class="info-capsule">
-                            <div class="plat">
-                                <div class="nom"> Soupe à l'oignon </div>
-                                <div> Revisité </div>
-                            </div>
-
-                            <div class="prix">
-                                20 <i class="fas fa-euro-sign"></i>
-                            </div>
-                        </div>
-                        <div class="check">
-                            <div class="checkicon">
-                                <i class="fas fa-check-circle fa-lg"></i>
-                            </div>
-                        </div>
-                    </a>
+                <div class="service_carte delai2">
+                    <div class="service_carte_texte">
+                        <span class="service_carte_texte2">Velouté de légumes d'antan</span>
+                        <span class="service_carte_texte3">Carotte, Panais, Topinambour</span>
+                    </div>
+                    <div class="service_carte_prix">
+                        <strong>35€</strong>
+                    </div>
+                    <div class="service_carte_check">
+                        <i class="check_icone fas fa-check-circle"></i>
+                    </div>
                 </div>
-                <div class="service">
-                    <h5>PLATS</h5>
 
-                    <a class="capsule one">
-                        <div class="info-capsule">
-                            <div class="plat">
-                                <div class="nom">Coquilles Saint-Jacques</div>
-                                <div> Accompagnées d'une purée de panais </div>
-                            </div>
-
-                            <div class="prix">
-                                40 <i class="fas fa-euro-sign"></i>
-                            </div>
-                        </div>
-                        <div class="check">
-                            <div class="checkicon">
-                                <i class="fas fa-check-circle fa-lg"></i>
-                            </div>
-                        </div>
-                    </a>
-                    <a class="capsule two">
-                        <div class="info-capsule">
-                            <div class="plat">
-                                <div class="nom"> Magret de canard </div>
-                                <div> Et parmentier de pommes de terres </div>
-                            </div>
-
-                            <div class="prix">
-                                35 <i class="fas fa-euro-sign"></i>
-                            </div>
-                        </div>
-                        <div class="check">
-                            <div class="checkicon">
-                                <i class="fas fa-check-circle fa-lg"></i>
-                            </div>
-                        </div>
-                    </a>
-                    <a class="capsule three">
-                        <div class="info-capsule">
-                            <div class="plat">
-                                <div class="nom"> Pigeonneau d'Ille-et-Vilaine </div>
-                                <div> Sur son lit de gnocchis aux legumes </div>
-                            </div>
-
-                            <div class="prix">
-                                44 <i class="fas fa-euro-sign"></i>
-                            </div>
-                        </div>
-                        <div class="check">
-                            <div class="checkicon">
-                                <i class="fas fa-check-circle fa-lg"></i>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="service">
-                    <h5>DESSERTS</h5>
-
-                    <a class="capsule one">
-                        <div class="info-capsule">
-                            <div class="plat">
-                                <div class="nom">Pétales de violettes glacés</div>
-                                <div> Et purée de noisettes </div>
-                            </div>
-
-                            <div class="prix">
-                                18 <i class="fas fa-euro-sign"></i>
-                            </div>
-                        </div>
-                        <div class="check">
-                            <div class="checkicon">
-                                <i class="fas fa-check-circle fa-lg"></i>
-                            </div>
-                        </div>
-                    </a>
-                    <a class="capsule two">
-                        <div class="info-capsule">
-                            <div class="plat">
-                                <div class="nom"> Fondant au chocolat </div>
-                                <div> Revisité </div>
-                            </div>
-
-                            <div class="prix">
-                                22 <i class="fas fa-euro-sign"></i>
-                            </div>
-                        </div>
-                        <div class="check">
-                            <div class="checkicon">
-                                <i class="fas fa-check-circle fa-lg"></i>
-                            </div>
-                        </div>
-                    </a>
-                    <a class="capsule three">
-                        <div class="info-capsule">
-                            <div class="plat">
-                                <div class="nom"> Millefeuille croustillant </div>
-                                <div> Myrtilles et pâte d'amande </div>
-                            </div>
-
-                            <div class="prix">
-                                23 <i class="fas fa-euro-sign"></i>
-                            </div>
-                        </div>
-                        <div class="check">
-                            <div class="checkicon">
-                                <i class="fas fa-check-circle fa-lg"></i>
-                            </div>
-                        </div>
-                    </a>
+                <div class="service_carte delai3">
+                    <div class="service_carte_texte">
+                        <span class="service_carte_texte2">Soupe à l'oignon</span>
+                        <span class="service_carte_texte3">Revisitée</span>
+                    </div>
+                    <div class="service_carte_prix">
+                        <strong>20€</strong>
+                    </div>
+                    <div class="service_carte_check">
+                        <i class="check_icone fas fa-check-circle"></i>
+                    </div>
                 </div>
             </section>
-            <form class="commander">
-                <input type="button" value="Commander">
-            </form>
+
+            <section class="service" id="plats">
+                <header class="service_header">
+                    <h3>PLATS</h3>
+                </header>
+
+                <div class="service_carte delai1">
+                    <div class="service_carte_texte">
+                        <span class="service_carte_texte2">Coquilles Saint-Jacques</span>
+                        <span class="service_carte_texte3">Accompagnées d'une purée de panais</span>
+                    </div>
+                    <div class="service_carte_prix">
+                        <strong>40€</strong>
+                    </div>
+                    <div class="service_carte_check">
+                        <i class="check_icone fas fa-check-circle"></i>
+                    </div>
+                </div>
+
+                <div class="service_carte delai2">
+                    <div class="service_carte_texte">
+                        <span class="service_carte_texte2">Magret de canard</span>
+                        <span class="service_carte_texte3">Et parmentier de pommes de terres</span>
+                    </div>
+                    <div class="service_carte_prix">
+                        <strong>35€</strong>
+                    </div>
+                    <div class="service_carte_check">
+                        <i class="check_icone fas fa-check-circle"></i>
+                    </div>
+                </div>
+
+                <div class="service_carte delai3">
+                    <div class="service_carte_texte">
+                        <span class="service_carte_texte2">Pigeonneau d'ille-et-Vilaine</span>
+                        <span class="service_carte_texte3">Sur son lit de gnocchis aux légumes</span>
+                    </div>
+                    <div class="service_carte_prix">
+                        <strong>44€</strong>
+                    </div>
+                    <div class="service_carte_check">
+                        <i class="check_icone fas fa-check-circle"></i>
+                    </div>
+                </div>
+            </section>
+
+            <section class="service" id="dessert">
+                <header class="service_header">
+                    <h3>DESSERT</h3>
+                </header>
+
+                <div class="service_carte delai1">
+                    <div class="service_carte_texte">
+                        <span class="service_carte_texte2">Pétales de violettes glacés</span>
+                        <span class="service_carte_texte3">Et purée de noisettes</span>
+                    </div>
+                    <div class="service_carte_prix">
+                        <strong>18€</strong>
+                    </div>
+                    <div class="service_carte_check">
+                        <i class="check_icone fas fa-check-circle"></i>
+                    </div>
+                </div>
+
+                <div class="service_carte delai2">
+                    <div class="service_carte_texte">
+                        <span class="service_carte_texte2">Fondant au chocolat</span>
+                        <span class="service_carte_texte3">Revisité</span>
+                    </div>
+                    <div class="service_carte_prix">
+                        <strong>22€</strong>
+                    </div>
+                    <div class="service_carte_check">
+                        <i class="check_icone fas fa-check-circle"></i>
+                    </div>
+                </div>
+
+                <div class="service_carte delai3">
+                    <div class="service_carte_texte">
+                        <span class="service_carte_texte2">Millefeuille croustillant</span>
+                        <span class="service_carte_texte3">Myrtilles et pâte d'amande</span>
+                    </div>
+                    <div class="service_carte_prix">
+                        <strong>23€</strong>
+                    </div>
+                    <div class="service_carte_check">
+                        <i class="check_icone fas fa-check-circle"></i>
+                    </div>
+                </div>
+            </section>
+        </section>
+        <form class="commander">
+            <input type="button" value="Commander">
+        </form>
     </main>
     <footer>
         <div class="logo">
@@ -219,6 +189,6 @@
             <a href="#"> Contact </a>
         </div>
     </footer>
-</body>
+    </body>
 
 </html>

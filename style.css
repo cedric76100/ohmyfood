@@ -10,7 +10,12 @@ body {
 }
 
 h1 {
-    font-family: 'Shrikhand'
+    font-family: 'Shrikhand';
+    font-size: x-large;
+}
+
+h2 {
+    font-size: large;
 }
 
 header {
@@ -24,9 +29,9 @@ header {
 }
 
 #logo img {
-    max-width: 100%;
-    height: 50%;
-    padding-top: 20px;
+    width: 250px;
+    height: 40px;
+    padding: 10px 30px 20px 10px;
 }
 
 main {
@@ -39,7 +44,7 @@ main {
     background-color: #e4e4e4;
     font-weight: bold;
     height: 40px;
-    padding-top: 20px;
+    padding-top: 15px;
 }
 
 
@@ -48,12 +53,14 @@ main {
     font-weight: bold;
     flex-wrap: wrap;
     text-align: center;
+    padding-top: 10px;
 }
 
 .decouvrez {
     flex-wrap: wrap;
     text-align: center;
     font-size: large;
+    padding-top: 10px;
 }
 
 .explorer {
@@ -90,6 +97,7 @@ main {
     box-shadow: 5px 5px 10px lightgrey;
     border-radius: 25px;
     background-color: #f6f6f6;
+    cursor: pointer;
 
 }
 
@@ -134,6 +142,20 @@ li:before {
     margin: 20px;
 }
 
+.pastilles {
+    padding-top: 20px;
+}
+
+.ligne1 {
+    display: flex;
+    flex-direction: column;
+}
+
+.ligne2 {
+    display: flex;
+    flex-direction: column;
+}
+
 .pastilles a {
     text-decoration: none;
     color: black;
@@ -159,6 +181,7 @@ li:before {
     display: flex;
     justify-content: space-between;
     height: 60px;
+    background-color: white;
 }
 
 .texte {
@@ -186,6 +209,7 @@ li:before {
     right: 6px;
     top: 20px;
     background-color: white;
+    font-size: x-large;
 }
 
 
@@ -220,7 +244,7 @@ li:before {
     border: none;
     background-color: whitesmoke;
     padding: 10px 14px;
-    font-size: 20px;
+    font-size: 30px;
     cursor: pointer;
     position: relative;
 }
@@ -228,7 +252,8 @@ li:before {
 .coeur>i {
     position: absolute;
     right: 6px;
-    top: 20px;
+    top: 25px;
+    font-size: x-large;
 }
 
 
@@ -271,34 +296,9 @@ li:before {
 
 .restaurant {
     width: 50%;
+    padding-bottom: 20px;
 }
 
-@keyframes slideToLeft {
-    0% {
-        right: -60px
-    }
-
-    100% {
-        right: 0px
-    }
-}
-
-@keyframes slideToRight {
-    0% {
-        right: 0px
-    }
-
-    100% {
-        right: -60px
-    }
-}
-
-@keyframes rotate {
-    100% {
-        transform: rotate(-360deg);
-        transform-origin: center center;
-    }
-}
 
 @keyframes slidetobottom {
     0% {
@@ -325,108 +325,115 @@ li:before {
     }
 }
 
-a {
-    display: block;
-    cursor: pointer;
+.delai1 {
+    animation: slidetobottom 1.5s;
+    animation-fill-mode: both;
+    animation-delay: 0.1s;
+}
+
+.delai2 {
+    animation: slidetobottom 1.5s;
+    animation-fill-mode: both;
+    animation-delay: 0.3s;
+}
+
+.delai3 {
+    animation: slidetobottom 1.5s;
+    animation-fill-mode: both;
+    animation-delay: 0.6s;
+}
+
+.check_icone {
+    color: white;
+    font-size: 20px;
+    opacity: 0;
+    transform: rotate(0deg);
+    transition: all 0.7s ease-in-out;
 }
 
 .service {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+    padding-bottom: 40px;
+    margin: 10px;
 }
 
-.service h5 {
-    text-decoration: underline 3px var(--tertiaire);
+.service_header {
+    margin-bottom: 25px;
 }
 
-.capsule {
-    position: relative;
-    overflow: hidden;
-    border-radius: 10px;
-    gap: 10px;
+.service_header ::after {
+    content: "";
+    display: block;
+    margin-top: 5px;
+    width: 40px;
+    height: 3px;
+    background-color: #99E2D0;
 }
 
-.nom {
-    font-weight: bold;
-    font-size: large;
-}
-
-.check {
-    width: 60px;
-    overflow: hidden;
-    background-color: var(--tertiaire);
-    text-align: center;
-    padding: 33px 0;
-    position: absolute;
-    right: -60px;
-    top: -10px;
-    animation: slideToRight 0.5s ease 0s 1 normal forwards;
-}
-
-.capsule:hover .check {
-    animation: slideToLeft 0.5s ease 0s 1 normal forwards;
-}
-
-.checkicon {
-    color: white;
-}
-
-.one {
-    animation-name: slidetobottom;
-    animation-duration: 2s;
-    animation-delay: 0.5s;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: 1;
-}
-
-.two {
-    animation-name: slidetobottom;
-    animation-duration: 2s;
-    animation-delay: 0.7s;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: 1;
-}
-
-.three {
-    animation-name: slidetobottom;
-    animation-duration: 2s;
-    animation-delay: 0.9s;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: 1;
-}
-
-.capsule:hover .check div {
-    animation: rotate 0.5s;
-}
-
-.prix {
-    animation: slideToRight 0.5s ease 0s 1 normal forwards;
-    position: absolute;
-    right: 0px;
-    margin-right: 80px;
-    font-weight: bold;
-    padding-top: 20px;
-}
-
-.capsule:hover .prix {
-    animation: slideToLeft 0.5s ease 0s 1 normal forwards;
-}
-
-.info-capsule {
+.service_carte {
+    height: 70px;
+    width: 100%;
+    padding-left: 10px;
+    background-color: white;
     display: flex;
     align-items: center;
-    margin: 0;
-    background-color: white;
-    position: relative;
-    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    overflow: hidden;
+    box-shadow: 2px 2px 10px #c4c3c0;
+    cursor: pointer;
+
 }
 
-.plat {
-    flex: 1;
+.service_carte_texte {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    line-height: 30px;
+}
+
+.service_carte_texte2 {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.service_carte_texte3 {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.service_carte_prix {
+    margin-left: 10px;
+}
+
+.service_carte_check {
+    height: 70px;
+    width: 60px;
+    opacity: 0;
+    background-color: #99E2D0;
+    margin-left: 25px;
+    margin-right: -70px;
+    border-radius: 0 10px 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.7s ease-in-out;
+}
+
+.service_carte:hover :nth-child(3) {
+    opacity: 1;
+    margin-right: 0px;
+}
+
+.service_carte:hover .check_icone {
+    opacity: 1;
+    transform: rotate(-360deg);
 }
 
 .mentions a {
@@ -518,7 +525,7 @@ footer i {
     }
 
     .coeur i {
-        top: 45px;
+        top: 25px;
     }
 
     .service {
@@ -526,17 +533,6 @@ footer i {
         display: inline-block;
         width: 30%;
         margin: 15px;
-    }
-
-    .capsule {
-        padding: 5px;
-        position: relative;
-        overflow: hidden;
-        border-radius: 10px;
-        border: 1px solid white;
-        gap: 10px;
-        background-color: white;
-        margin: 10px;
     }
 
     footer {
