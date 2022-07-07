@@ -39,6 +39,7 @@ main {
 }
 
 /* acceuil*/
+
 .localisation {
     text-align: center;
     background-color: #e4e4e4;
@@ -231,6 +232,11 @@ li:before {
     opacity: 0
 }
 
+input:hover {
+    box-shadow: 5px 5px 10px grey;
+    filter: brightness(1.1);
+}
+
 /* restaurant*/
 .back {
     width: 8%;
@@ -416,7 +422,7 @@ li:before {
     height: 70px;
     width: 60px;
     opacity: 0;
-    background-color: #99E2D0;
+    background-color: var(--tertiaire);
     margin-left: 25px;
     margin-right: -70px;
     border-radius: 0 10px 10px 0;
