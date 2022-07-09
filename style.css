@@ -222,20 +222,86 @@ li:before {
     color: black;
 }
 
-.pastille {
+.pastille-1 {
     width: 100%;
     border-radius: 20px;
     box-shadow: 3px 3px 6px lightgrey;
     background-color: white;
     overflow: hidden;
     margin-bottom: 20px;
+    position: relative;
 }
 
-.pastille img {
+.pastille-2 {
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 3px 3px 6px lightgrey;
+    background-color: white;
+    overflow: hidden;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.pastille-3 {
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 3px 3px 6px lightgrey;
+    background-color: white;
+    overflow: hidden;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.pastille-4 {
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 3px 3px 6px lightgrey;
+    background-color: white;
+    overflow: hidden;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.pastille-1 img {
     height: 150px;
     width: 100%;
     object-fit: cover;
     border-radius: 20px 20px 0px 0px;
+}
+
+.pastille-2 img {
+    height: 150px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.pastille-3 img {
+    height: 150px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.pastille-4 img {
+    height: 150px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.nouveau {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: var(--tertiaire);
+    color: #5d8d81;
+    font-weight: bold;
+    border-radius: 5px;
+    width: 90px;
+    height: 22px;
+    text-align: center;
+    padding: 5px;
 }
 
 .pastilletexte {
@@ -488,6 +554,7 @@ input:hover {
 }
 
 .service_carte_prix {
+    margin-top: 30px;
     margin-left: 10px;
 }
 
@@ -575,17 +642,42 @@ footer i {
         width: 33%;
     }
 
-    .pastilles {
-        display: flex;
-        justify-content: space-between;
+    .pastillerestaurant {
+        display: block;
     }
 
     .ligne1 {
-        width: 45%;
+        display: flex;
+        flex-direction: row;
     }
 
     .ligne2 {
-        width: 45%;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .ligne1 {
+        width: 100%;
+    }
+
+    .ligne2 {
+        width: 100%;
+    }
+
+    .pastille-1 {
+        margin-right: 10px;
+    }
+
+    .pastille-2 {
+        margin-left: 10px;
+    }
+
+    .pastille-3 {
+        margin-right: 10px;
+    }
+
+    .pastille-4 {
+        margin-left: 10px;
     }
 
     /*restaurant*/
@@ -657,17 +749,42 @@ footer i {
         width: 90%;
     }
 
-    .pastilles {
-        display: flex;
-        justify-content: space-between;
+    .pastillerestaurant {
+        display: block;
     }
 
     .ligne1 {
-        width: 45%;
+        display: flex;
+        flex-direction: row;
     }
 
     .ligne2 {
-        width: 45%;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .ligne1 {
+        width: 100%;
+    }
+
+    .ligne2 {
+        width: 100%;
+    }
+
+    .pastille-1 {
+        margin-right: 10px;
+    }
+
+    .pastille-2 {
+        margin-left: 10px;
+    }
+
+    .pastille-3 {
+        margin-right: 10px;
+    }
+
+    .pastille-4 {
+        margin-left: 10px;
     }
 
     /*restaurant*/
