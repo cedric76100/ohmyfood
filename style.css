@@ -38,6 +38,61 @@ main {
     background-color: whitesmoke;
 }
 
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes fondu {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fondu2 {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes slidetobottom {
+    0% {
+        transform: translateY(18px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes like {
+    0% {
+        opacity: 0;
+        color: white;
+    }
+
+    100% {
+        opacity: 1;
+        color: var(--primary);
+        background-color: var(--primary);
+    }
+}
+
 /* acceuil*/
 
 .chargement {
@@ -67,36 +122,6 @@ main {
     animation: fondu 2s linear;
     animation-delay: 1.5s;
     animation-fill-mode: both;
-}
-
-@keyframes spin {
-    0% {
-        transform: rotate(0deg);
-    }
-
-    100% {
-        transform: rotate(360deg);
-    }
-}
-
-@keyframes fondu {
-    0% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 1;
-    }
-}
-
-@keyframes fondu2 {
-    0% {
-        opacity: 1;
-    }
-
-    100% {
-        opacity: 0;
-    }
 }
 
 .localisation {
@@ -431,32 +456,6 @@ input:hover {
     width: 50%;
     padding-bottom: 20px;
     margin-left: 10px;
-}
-
-
-@keyframes slidetobottom {
-    0% {
-        transform: translateY(18px);
-        opacity: 0;
-    }
-
-    100% {
-        transform: translateY(0px);
-        opacity: 1;
-    }
-}
-
-@keyframes like {
-    0% {
-        opacity: 0;
-        color: white;
-    }
-
-    100% {
-        opacity: 1;
-        color: var(--primary);
-        background-color: var(--primary);
-    }
 }
 
 .delai1 {
